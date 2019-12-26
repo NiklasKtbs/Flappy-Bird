@@ -2,12 +2,12 @@ import ledControl.BoardController;
 
 public class Bird {
 
-	private final int[] gelb = new int[] {127,127,0};
+	private final int[] orange = new int[] {127,60,0};
 	
 	private BoardController controller;
 	
 	private int [][][] vogel = new int [][][] {
-		{gelb,},
+		{orange,},
 	};
 	
 	public Bird (BoardController controller) {
