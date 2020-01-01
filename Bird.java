@@ -43,13 +43,4 @@ public class Bird {
 	public void setY(int y) {
 		this.y = y;
 	}
-	
-	public int getBirdWidth() {
-		return vogel[0].length;
-	}
-	
-	public int getBirdHeight() {
-		return vogel.length;
-	}
-
 }
