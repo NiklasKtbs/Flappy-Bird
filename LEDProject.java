@@ -22,7 +22,7 @@ public class LEDProject {
 	// IRGENDWO EXISTIERT BUG
 	private static void animationLoopKeyboard(BoardController controller, Bird bird, Pipe pipe) {
 		
-		boolean a = true; 													// Abbruchbedingung
+		boolean a = false; 													//Abbruchbedingung
 		int x = 11; 														//Pipelocation
 		int y = 0;  														//Birdlocation
 		int rand = ThreadLocalRandom.current().nextInt(0, 10); 				//Lochlocation
@@ -31,6 +31,7 @@ public class LEDProject {
 
 		//Dauerschleife
 		while (true) {
+			
 			
 			//Neustart
 			if(a==false) {
@@ -117,12 +118,13 @@ public class LEDProject {
 					//Reset
 					if(x==-1) {
 						x=11;
+						//y=5;
 						rand = ThreadLocalRandom.current().nextInt(0, 10);
 					}
 			
 					// Update zum Darstellen
 					controller.updateBoard();
-					controller.sleep(200);
+					controller.sleep(300);
 			
 			}
 		}

@@ -13,7 +13,7 @@ public class Pipe {
 	public void draw (int x, int y, int z) {
 		for (int i=0; i<z; i++) {
 			controller.setColor(x,i,grün);
-			for (int j=z+1; j<12; j++) {
+			for (int j=z+1; j<11; j++) {
 				controller.setColor(x,j,grün);
 			}
 		}
